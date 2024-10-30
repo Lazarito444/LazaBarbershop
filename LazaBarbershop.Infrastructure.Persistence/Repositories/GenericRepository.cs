@@ -1,8 +1,10 @@
+using LazaBarbershop.Core.Domain.Common;
 using LazaBarbershop.Infrastructure.Persistence.Contexts;
 
 namespace LazaBarbershop.Infrastructure.Persistence.Repositories;
 
-public class GenericRepository<TEntity> where TEntity : class
+public class GenericRepository<TEntity> 
+    where TEntity : AppEntity
 {
     private readonly AppDbContext _dbContext;
 

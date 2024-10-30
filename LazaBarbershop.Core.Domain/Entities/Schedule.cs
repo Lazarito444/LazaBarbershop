@@ -1,8 +1,9 @@
+using LazaBarbershop.Core.Domain.Common;
+
 namespace LazaBarbershop.Core.Domain.Entities;
 
-public class Schedule
+public class Schedule : AppEntity
 {
-    public int Id { get; set; }
     public int BarbershopId { get; set; }
     public DayOfWeek Day { get; set; }
     public TimeSpan OpenTime { get; set; }
