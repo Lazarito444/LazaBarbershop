@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazaBarbershop.Core.Domain", "LazaBarbershop.Core.Domain\LazaBarbershop.Core.Domain.csproj", "{CB2232BC-B05D-42DF-877D-3DBB13046942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FE225D0B-E076-4F09-B8F1-83A6AFF28E4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1C6BB42A-AEE7-41FF-81FF-E0C5C87EFF64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{92ED6BE3-9CF5-4578-A4F9-38518754F0BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{64504AD7-7239-4321-ABCB-1311237E7D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazaBarbershop.Core.Application", "LazaBarbershop.Core.Application\LazaBarbershop.Core.Application.csproj", "{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazaBarbershop.Infrastructure.Persistence", "LazaBarbershop.Infrastructure.Persistence\LazaBarbershop.Infrastructure.Persistence.csproj", "{5C9E3B22-9A95-4A19-A505-F876BF3F40BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazaBarbershop.Presentation.Api", "LazaBarbershop.Presentation.Api\LazaBarbershop.Presentation.Api.csproj", "{79E66459-3639-47DE-91BC-965174B066EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB2232BC-B05D-42DF-877D-3DBB13046942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2232BC-B05D-42DF-877D-3DBB13046942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2232BC-B05D-42DF-877D-3DBB13046942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2232BC-B05D-42DF-877D-3DBB13046942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9E3B22-9A95-4A19-A505-F876BF3F40BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9E3B22-9A95-4A19-A505-F876BF3F40BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9E3B22-9A95-4A19-A505-F876BF3F40BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9E3B22-9A95-4A19-A505-F876BF3F40BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E66459-3639-47DE-91BC-965174B066EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E66459-3639-47DE-91BC-965174B066EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E66459-3639-47DE-91BC-965174B066EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E66459-3639-47DE-91BC-965174B066EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C6BB42A-AEE7-41FF-81FF-E0C5C87EFF64} = {FE225D0B-E076-4F09-B8F1-83A6AFF28E4D}
+		{92ED6BE3-9CF5-4578-A4F9-38518754F0BF} = {FE225D0B-E076-4F09-B8F1-83A6AFF28E4D}
+		{64504AD7-7239-4321-ABCB-1311237E7D73} = {FE225D0B-E076-4F09-B8F1-83A6AFF28E4D}
+		{CB2232BC-B05D-42DF-877D-3DBB13046942} = {1C6BB42A-AEE7-41FF-81FF-E0C5C87EFF64}
+		{A73FE9D0-CEE7-4BE2-A217-95B9CAAD8FA3} = {1C6BB42A-AEE7-41FF-81FF-E0C5C87EFF64}
+		{5C9E3B22-9A95-4A19-A505-F876BF3F40BC} = {92ED6BE3-9CF5-4578-A4F9-38518754F0BF}
+		{79E66459-3639-47DE-91BC-965174B066EC} = {64504AD7-7239-4321-ABCB-1311237E7D73}
+	EndGlobalSection
+EndGlobal
