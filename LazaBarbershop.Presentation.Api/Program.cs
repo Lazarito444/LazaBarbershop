@@ -1,5 +1,6 @@
 using LazaBarbershop.Core.Application;
 using LazaBarbershop.Infrastructure.Persistence;
+using LazaBarbershop.Presentation.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenceLayer(builder.Configuration.GetConnectionString("AppDbConnection")!);
+builder.Services.AddPresentationLayer();
+
 
 var app = builder.Build();
 

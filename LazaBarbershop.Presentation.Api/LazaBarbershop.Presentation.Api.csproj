@@ -20,4 +20,8 @@
       <ProjectReference Include="..\LazaBarbershop.Infrastructure.Persistence\LazaBarbershop.Infrastructure.Persistence.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\v1\" />
+    </ItemGroup>
+
 </Project>
