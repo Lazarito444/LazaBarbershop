@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LazaBarbershop.Core.Application\LazaBarbershop.Core.Application.csproj" />
       <ProjectReference Include="..\LazaBarbershop.Core.Domain\LazaBarbershop.Core.Domain.csproj" />
     </ItemGroup>
 

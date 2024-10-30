@@ -1,4 +1,6 @@
+using LazaBarbershop.Core.Application.Interfaces.Repositories;
 using LazaBarbershop.Infrastructure.Persistence.Contexts;
+using LazaBarbershop.Infrastructure.Persistence.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LazaBarbershop.Infrastructure.Persistence;
@@ -14,5 +16,9 @@ public static class ServiceRegistration
         });
         
         // Register Repositories
+        services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+        services.AddTransient<IAppointmentRepository, AppointmentRepository>();
+        services.AddTransient<IBarbershopRepository, BarbershopRepository>();
+        services.AddTransient<IScheduleRepository, ScheduleRepository>();
     }
 }

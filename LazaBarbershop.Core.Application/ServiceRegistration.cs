@@ -9,6 +9,7 @@ public static class ServiceRegistration
     {
         // Register Automapper
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        
         // Register Services
     }
 }

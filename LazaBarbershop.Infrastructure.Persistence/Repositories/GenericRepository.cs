@@ -1,9 +1,10 @@
+using LazaBarbershop.Core.Application.Interfaces.Repositories;
 using LazaBarbershop.Core.Domain.Common;
 using LazaBarbershop.Infrastructure.Persistence.Contexts;
 
 namespace LazaBarbershop.Infrastructure.Persistence.Repositories;
 
-public class GenericRepository<TEntity> 
+public class GenericRepository<TEntity> : IGenericRepository<TEntity>
     where TEntity : AppEntity
 {
     private readonly AppDbContext _dbContext;
@@ -20,7 +21,7 @@ public class GenericRepository<TEntity>
         return entity;
     }
 
-    public async Task Update(int id, TEntity entity)
+    public async Task UpdateAsync(int id, TEntity entity)
     {
         _dbContext.Entry(entity).CurrentValues.SetValues(entity);
         await _dbContext.SaveChangesAsync();

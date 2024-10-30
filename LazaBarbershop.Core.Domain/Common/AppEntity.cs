@@ -1,6 +1,6 @@
 namespace LazaBarbershop.Core.Domain.Common;
 
-public class AppEntity
+public abstract class AppEntity
 {
     public int Id { get; set; }
 }
