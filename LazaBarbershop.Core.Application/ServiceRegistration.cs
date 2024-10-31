@@ -13,6 +13,9 @@ public static class ServiceRegistration
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         
         // Register Services
-        services.AddTransient(typeof(IGenericService<,>), typeof(GenericService<,,>));
+        services.AddTransient(typeof(IGenericService<,,>), typeof(GenericService<,,>));
+        services.AddTransient<IAppointmentService, AppointmentService>();
+        services.AddTransient<IBarbershopService, BarbershopService>();
+        services.AddTransient<IScheduleService, ScheduleService>();
     }
 }

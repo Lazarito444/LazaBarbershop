@@ -1,6 +1,6 @@
 namespace LazaBarbershop.Core.Application.Interfaces.Services;
 
-public interface IGenericService<TEntityDto, in TSaveEntityDto>
+public interface IGenericService<TEntity, TEntityDto, in TSaveEntityDto>
 {
     Task<TEntityDto> AddAsync(TSaveEntityDto saveEntityDto);
     Task UpdateAsync(int id, TEntityDto entityDto);

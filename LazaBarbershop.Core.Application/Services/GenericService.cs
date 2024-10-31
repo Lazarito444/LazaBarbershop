@@ -5,7 +5,7 @@ using LazaBarbershop.Core.Domain.Common;
 
 namespace LazaBarbershop.Core.Application.Services;
 
-public class GenericService<TEntity, TEntityDto, TSaveEntityDto> : IGenericService<TEntityDto, TSaveEntityDto>
+public class GenericService<TEntity, TEntityDto, TSaveEntityDto> : IGenericService<TEntity, TEntityDto, TSaveEntityDto>
     where TEntity : AppEntity
     where TEntityDto : class
     where TSaveEntityDto : class
