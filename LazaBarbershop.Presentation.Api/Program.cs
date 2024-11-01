@@ -4,12 +4,9 @@ using LazaBarbershop.Presentation.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenceLayer(builder.Configuration.GetConnectionString("AppDbConnection")!);
 builder.Services.AddPresentationLayer();
-
 
 var app = builder.Build();
 
@@ -20,5 +17,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAll");
 app.Run();
