@@ -10,12 +10,10 @@ builder.Services.AddPresentationLayer();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Laza's Barbershop API"));
 
+app.MapControllers();
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 app.Run();
