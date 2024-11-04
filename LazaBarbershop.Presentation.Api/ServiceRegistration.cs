@@ -1,4 +1,5 @@
 using System.Reflection;
+using Asp.Versioning;
 using Microsoft.OpenApi.Models;
 
 namespace LazaBarbershop.Presentation.Api;
@@ -7,6 +8,14 @@ public static class ServiceRegistration
 {
     public static void AddPresentationLayer(this IServiceCollection services)
     {
+        services.AddApiVersioning(options =>
+        {
+            options.DefaultApiVersion = new ApiVersion(1, 0);
+            options.AssumeDefaultVersionWhenUnspecified = true;
+            options.ReportApiVersions = true;
+            options.ApiVersionReader = new HeaderApiVersionReader("X-version");
+        });
+        
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(options =>
         {

@@ -4,9 +4,12 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
           <PrivateAssets>all</PrivateAssets>
@@ -19,5 +22,5 @@
       <ProjectReference Include="..\LazaBarbershop.Core.Application\LazaBarbershop.Core.Application.csproj" />
       <ProjectReference Include="..\LazaBarbershop.Infrastructure.Persistence\LazaBarbershop.Infrastructure.Persistence.csproj" />
     </ItemGroup>
-
+    
 </Project>
